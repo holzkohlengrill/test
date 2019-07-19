@@ -9,7 +9,7 @@ python:
 matrix:
     include:
         - os: linux
-              dist: bionic
+          dist: bionic
         # Disabled since travis does not support python on windows
         - os: windows
 
