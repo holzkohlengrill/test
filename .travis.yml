@@ -4,21 +4,21 @@ sudo: false
 language: python
 
 python:
-  - 3.7-dev
+    - 3.7-dev
 
 matrix:
     include:
         - os: linux
-              dist: bionic
+        - dist: bionic
         # Disabled since travis does not support python on windows
-        #- os: windows
+        # - os: windows
 
 install:
-  - pip install -U pandas
-  - pip install -U pylint
+    - pip install -U pandas
+    - pip install -U pylint
 
 git:
-  submodules: false
+    submodules: false
 
 script:
     - python -m unittest test
