@@ -6,7 +6,7 @@ def  main():
     func(1, 1)
     print("calc done")
     
-def func(a= 1, b):
+def func(a, b= 1):
     return a+b
 
     
