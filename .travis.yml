@@ -11,7 +11,7 @@ matrix:
         - os: linux
               dist: bionic
         # Disabled since travis does not support python on windows
-        # - os: windows
+        - os: windows
 
 install:
     - pip install -U pandas
