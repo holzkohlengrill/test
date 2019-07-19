@@ -11,6 +11,7 @@ os:
 
 install:
     - pip install -U pandas
+    - pip install -U pylint
 
 git:
     submodules: false
