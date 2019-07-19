@@ -1,0 +1,16 @@
+sudo: false
+language: python
+
+python:
+    - 3.7-dev
+
+os:
+    - linux
+      dist: bionic
+    - windows
+
+install:
+    - pip install -U pandas
+
+git:
+    submodules: false
