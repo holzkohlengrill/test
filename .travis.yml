@@ -10,7 +10,8 @@ matrix:
     include:
         - os: linux
               dist: bionic
-        - os: windows
+        # Disabled since travis does not support python on windows
+        #- os: windows
 
 install:
   - pip install -U pandas
@@ -20,4 +21,5 @@ git:
   submodules: false
 
 script:
-  - unittest
+    - python -m unittest test
+    - pylint test.py
