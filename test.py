@@ -1,14 +1,17 @@
-import time
-import pandas
-
 def  main():
-    print("hello "  )
+    """
+    docstring
+    """
+    print("hello ")
     func(1, 1)
     print("calc done")
     
-def func(a, b= 1):
+def func(a, b=1):
+    """
+    docstring
+    """
     return a+b
 
     
-if "__main__" == __name__:
+if __name__ == "__main__":
     main()
