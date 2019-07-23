@@ -16,10 +16,14 @@ matrix:
 install:
     - pip install -U pandas
     - pip install -U pylint
+    - pip install -U coveralls
 
 git:
     submodules: false
 
 script:
     - python -m unittest test
-    - pylint test.py
+    - pylint -j 0 test.py
+
+after_success:
+    - coveralls
