@@ -23,7 +23,7 @@ git:
 
 script:
     - python -m unittest test
-    - pylint -j 0 test.py
+    - pylint -j 0 --errors-only test.py
     - coverage run --source=test setup.py test
 
 after_success:
