@@ -15,7 +15,11 @@ matrix:
 
 install:
     - pip install -U pylint
+    - sudo apt-get install enchant          # needed for pyenchant
+    - pip install pyenchant                 # needed for pylint spell checking
     - pip install -U coveralls
+    - pip install mkdocs
+    - pip install mkdocs-material
 
 git:
     submodules: false
